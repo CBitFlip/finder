@@ -12,7 +12,7 @@ public class FilenameSearchPlugin : IPlugin
 
     public PluginOutput Find(PluginInput pluginInput)
     {
-        throw new NotImplementedException();
+        return new PluginOutput(PluginResultStatus.Skipped, null);
     }
 
     public void Shutdown()
