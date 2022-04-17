@@ -1,9 +1,10 @@
 ﻿namespace Finder.Plugins.FilenameSearch;
 using Finder.Plugins.Contracts;
+using System.Threading.Tasks;
 
-public class FilenameSearchPlugin : IPlugin
+internal class FileIndexer : IDisposable
 {
-    public PluginOutput Find(PluginInput pluginInput)
+    public void Dispose()
     {
         throw new NotImplementedException();
     }

@@ -1,6 +1,12 @@
 ﻿namespace Finder.Plugins.Contracts;
 
-public class PluginOutput
-{
+public record PluginOutput(PluginResultStatus Status, Exception? Exception);
 
+public enum PluginResultStatus
+{
+    Unknown,
+    Skipped,
+    Timeout,
+    Errored,
+    Executed
 }

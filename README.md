@@ -1,4 +1,4 @@
-# finder
+# Finder console application
 
 It finds stuff, because it is a finder.
 
@@ -41,3 +41,11 @@ path: nvarchar
 Table: FileWordsMapping
 wordId: int
 fileId: int
+
+## File Index Project Structure
+
+Finder.Plugins.SystemFileSearch
+|>Finder.Plugins.SystemFileSearch.Persistence
+
+Finder.Plugins.SystemFileSearch.DataPrepper
+|>Finder.Plugins.SystemFileSearch.Persistence

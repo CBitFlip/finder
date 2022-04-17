@@ -9,7 +9,7 @@ public class FilenameSearchPluginUnitTests
     public void DoesNotThrowError()
     {
         var plugin = new FilenameSearchPlugin();
-        var input = new PluginInput();
+        var input = new PluginInput("search text");
 
         try
         {

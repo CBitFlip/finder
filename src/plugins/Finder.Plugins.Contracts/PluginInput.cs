@@ -1,6 +1,3 @@
 ﻿namespace Finder.Plugins.Contracts;
 
-public class PluginInput
-{
-
-}
+public record PluginInput(string Search);

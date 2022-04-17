@@ -1,5 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Finder.Plugins.Contracts;
+
 Console.WriteLine("Hello, World!");
+
+// TODO: Dependency Injection (IPlugins)
 
 
 var input = Console.ReadLine();
