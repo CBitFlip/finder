@@ -18,13 +18,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solutio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{43D53380-7446-45C2-B9E4-35B86B212A28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder.Plugins.UnitTests", "tests\Finder.Plugins.UnitTests\Finder.Plugins.UnitTests.csproj", "{FBE2B86B-AC8E-4BF9-8BB6-A88703650527}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finder.Plugins.UnitTests", "tests\Finder.Plugins.UnitTests\Finder.Plugins.UnitTests.csproj", "{FBE2B86B-AC8E-4BF9-8BB6-A88703650527}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finder.Plugins.Contracts", "src\plugins\Finder.Plugins.Contracts\Finder.Plugins.Contracts.csproj", "{571A11B4-4EA2-4E13-A666-9183C4463295}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder.Plugins.SystemFileSearch", "src\plugins\Finder.Plugins.SystemFileSearch\Finder.Plugins.SystemFileSearch.csproj", "{C096303C-275B-4C09-83F8-C2A2B5AB72A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finder.Plugins.SystemFileSearch", "src\plugins\Finder.Plugins.SystemFileSearch\Finder.Plugins.SystemFileSearch.csproj", "{C096303C-275B-4C09-83F8-C2A2B5AB72A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder.Plugins.BrowserSearch", "src\plugins\Finder.Plugins.BrowserSearch\Finder.Plugins.BrowserSearch.csproj", "{544F7A2C-1666-4B22-B822-F978DACCA0FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finder.Plugins.BrowserSearch", "src\plugins\Finder.Plugins.BrowserSearch\Finder.Plugins.BrowserSearch.csproj", "{544F7A2C-1666-4B22-B822-F978DACCA0FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder", "src\Finder\Finder.csproj", "{9FF9DB50-526F-401A-9763-384789115D3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +54,10 @@ Global
 		{544F7A2C-1666-4B22-B822-F978DACCA0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{544F7A2C-1666-4B22-B822-F978DACCA0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{544F7A2C-1666-4B22-B822-F978DACCA0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF9DB50-526F-401A-9763-384789115D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF9DB50-526F-401A-9763-384789115D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF9DB50-526F-401A-9763-384789115D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF9DB50-526F-401A-9763-384789115D3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{571A11B4-4EA2-4E13-A666-9183C4463295} = {43D53380-7446-45C2-B9E4-35B86B212A28}
 		{C096303C-275B-4C09-83F8-C2A2B5AB72A2} = {43D53380-7446-45C2-B9E4-35B86B212A28}
 		{544F7A2C-1666-4B22-B822-F978DACCA0FB} = {43D53380-7446-45C2-B9E4-35B86B212A28}
+		{9FF9DB50-526F-401A-9763-384789115D3E} = {600E2490-82AD-4B5A-9B39-E40C92F76450}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {405552F9-CBFB-48AD-B162-CFBEF1E5E834}

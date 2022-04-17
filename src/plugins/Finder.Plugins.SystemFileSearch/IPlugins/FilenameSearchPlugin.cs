@@ -1,20 +1,26 @@
 ﻿namespace Finder.Plugins.FilenameSearch;
 using Finder.Plugins.Contracts;
 
-public class FileContentSearchPlugin : IPlugin
+public sealed class FilenameSearchPlugin : IPlugin
 {
-    public void Initialize()
+    private FilenameIndexer? _indexer;
+
+    public Task InitializeAsync()
     {
-        throw new NotImplementedException();
+        _indexer = new FilenameIndexer();
+        return Task.CompletedTask;
     }
 
-    public PluginOutput Find(PluginInput pluginInput)
+    public Task<PluginOutput> FindAsync(PluginInput input, CancellationToken ctx = default)
     {
-        throw new NotImplementedException();
+        var output = new PluginOutput(PluginResultStatus.Skipped, null);
+
+        return Task.FromResult(output);
     }
-   
-    public void Shutdown()
+
+    public Task ShutdownAsync(CancellationToken ctx)
     {
-        throw new NotImplementedException();
+        _indexer?.Dispose();
+        return Task.CompletedTask;
     }
 }

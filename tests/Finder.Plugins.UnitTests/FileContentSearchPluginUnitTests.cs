@@ -4,12 +4,12 @@ using Finder.Plugins.FilenameSearch;
 using System.Threading.Tasks;
 using Xunit;
 
-public class FilenameSearchPluginUnitTests
+public class FileContentSearchPluginUnitTests
 {
     [Fact]
     public async Task DoesNotThrowError()
     {
-        var plugin = new FilenameSearchPlugin();
+        var plugin = new FileContentSearchPlugin();
         var input = new PluginInput("search text");
 
         try

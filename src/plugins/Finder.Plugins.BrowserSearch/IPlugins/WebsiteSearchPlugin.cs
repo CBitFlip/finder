@@ -1,18 +1,19 @@
 ﻿namespace Finder.Plugins.BrowserSearch;
 using Finder.Plugins.Contracts;
-public class WebsiteSearchPlugin : IPlugin
+
+public sealed class WebsiteSearchPlugin : IPlugin
 {
-    public void Initialize()
+    public Task InitializeAsync()
     {
         throw new NotImplementedException();
     }
 
-    public PluginOutput Find(PluginInput pluginInput)
+    public Task<PluginOutput> FindAsync(PluginInput input, CancellationToken ctx = default)
     {
         throw new NotImplementedException();
     }
 
-    public void Shutdown()
+    public Task ShutdownAsync(CancellationToken ctx)
     {
         throw new NotImplementedException();
     }

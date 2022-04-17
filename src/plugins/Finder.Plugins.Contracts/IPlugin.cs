@@ -2,7 +2,7 @@
 
 public interface IPlugin
 {
-    public void Initialize();
-    public PluginOutput Find(PluginInput pluginInput);
-    public void Shutdown();
+    public Task InitializeAsync();
+    public Task<PluginOutput> FindAsync(PluginInput input, CancellationToken ctx);
+    public Task ShutdownAsync(CancellationToken ctx);
 }

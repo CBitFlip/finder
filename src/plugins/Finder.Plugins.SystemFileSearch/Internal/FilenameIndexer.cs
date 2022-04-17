@@ -2,10 +2,9 @@
 using Finder.Plugins.Contracts;
 using System.Threading.Tasks;
 
-internal class FileIndexer : IDisposable
+internal sealed class FilenameIndexer : IDisposable
 {
     public void Dispose()
     {
-        throw new NotImplementedException();
     }
 }
