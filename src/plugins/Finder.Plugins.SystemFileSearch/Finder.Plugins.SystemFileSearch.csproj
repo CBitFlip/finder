@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Finder.Plugins.Contracts\Finder.Plugins.Contracts.csproj" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="echo &quot;HEY YOU GUYSSSSSSSS&quot;&#xD;&#xA;echo &quot;$(ProjectDir)systemfiles.sqlite&quot;&#xD;&#xA;if not EXIST &quot;$(ProjectDir)systemfiles.sqlite&quot; (&#xD;&#xA;   echo &quot;CURRENT DIR: %25cd%25&quot;&#xD;&#xA;   echo &quot;&quot; &gt; &quot;$(ProjectDir)systemfiles.sqlite&quot;&#xD;&#xA;)" />
+  </Target>
+
 </Project>
