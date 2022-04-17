@@ -5,7 +5,7 @@
 
 ## ## ## ## ## ## ## ## ## ## ## ## ## ##
 # PROJECT CUSTOM IGNORE PATTERNS
-systemfiles.sqlite
+*.sqlite
 ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
 
 # User-specific files
