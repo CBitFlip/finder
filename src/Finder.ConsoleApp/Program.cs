@@ -5,26 +5,26 @@ using Finder.Plugins.Contracts;
 using Finder.Plugins.FilenameSearch;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((_, services) =>
-        services
-            // Each basic plugin registration
-            //.AddScoped<IPlugin, BookmarkSearchPlugin>()
-            //.AddScoped<IPlugin, WebsiteSearchPlugin>()
-            .AddScoped<IPlugin, FileContentSearchPlugin>()
-            .AddScoped<IPlugin, FilenameSearchPlugin>()
-
-            // As a hosted service / background service, this will trigger automatically
-            //  on host run and it's cancellation token triggered when the host stops.
-            .AddHostedService<ConsoleWorkerService>()
-        )
-    .Build();
-Console.WriteLine("Welcome to the Finder, may it find for you well!");
-
-AppDomain.CurrentDomain.ProcessExit += (_, _) =>
+var builder = Host.CreateDefaultBuilder(args);
+builder.ConfigureLogging((_, logging) =>
 {
-    Console.WriteLine("Received SIGTERM");
-};
+    logging.ClearProviders();
+    logging.AddDebug();
+});
+builder.ConfigureServices((_, services) =>
+{
+    services
+        // Each basic plugin registration
+        //.AddScoped<IPlugin, BookmarkSearchPlugin>()
+        //.AddScoped<IPlugin, WebsiteSearchPlugin>()
+        .AddScoped<IPlugin, FileContentSearchPlugin>()
+        .AddScoped<IPlugin, FilenameSearchPlugin>()
 
-await host.RunAsync();
+        // As a hosted service / background service, this will trigger automatically
+        //  on host run and it's cancellation token triggered when the host stops.
+        .AddHostedService<ConsoleWorkerService>();        
+});
+using IHost app = builder.Build();
+await app.RunAsync();
