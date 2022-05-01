@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec  ContinueOnError="true"
+           WorkingDirectory="$(MSBuildProjectDirectory)/go"
+           Command="go build -buildmode=c-shared -buildvcs=false -o ../finderDB.dll" />
+  </Target>
+
+</Project>
