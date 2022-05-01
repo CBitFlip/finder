@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Finder.Plugins.Contracts\Finder.Plugins.Contracts.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if not EXIST &quot;$(ProjectDir)systemfiles.sqlite&quot; (&#xD;&#xA;   echo Creating empty file for '$(ProjectDir)systemfiles.sqlite'&#xD;&#xA;   echo.&gt;&quot;$(ProjectDir)systemfiles.sqlite&quot;&#xD;&#xA;)" />
+  </Target>
+
+</Project>
