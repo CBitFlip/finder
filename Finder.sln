@@ -26,7 +26,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finder.Plugins.SystemFileSe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finder.Plugins.BrowserSearch", "src\plugins\Finder.Plugins.BrowserSearch\Finder.Plugins.BrowserSearch.csproj", "{544F7A2C-1666-4B22-B822-F978DACCA0FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder", "src\Finder\Finder.csproj", "{9FF9DB50-526F-401A-9763-384789115D3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finder", "src\Finder\Finder.csproj", "{9FF9DB50-526F-401A-9763-384789115D3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finder.Plugins.SystemFileSearch.Dependencies", "src\plugins\Finder.Plugins.SystemFileSearch.Dependencies\Finder.Plugins.SystemFileSearch.Dependencies.csproj", "{CBF6353B-E6EF-437F-9890-01AD08443262}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +60,10 @@ Global
 		{9FF9DB50-526F-401A-9763-384789115D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FF9DB50-526F-401A-9763-384789115D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FF9DB50-526F-401A-9763-384789115D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF6353B-E6EF-437F-9890-01AD08443262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF6353B-E6EF-437F-9890-01AD08443262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF6353B-E6EF-437F-9890-01AD08443262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF6353B-E6EF-437F-9890-01AD08443262}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{C096303C-275B-4C09-83F8-C2A2B5AB72A2} = {43D53380-7446-45C2-B9E4-35B86B212A28}
 		{544F7A2C-1666-4B22-B822-F978DACCA0FB} = {43D53380-7446-45C2-B9E4-35B86B212A28}
 		{9FF9DB50-526F-401A-9763-384789115D3E} = {600E2490-82AD-4B5A-9B39-E40C92F76450}
+		{CBF6353B-E6EF-437F-9890-01AD08443262} = {43D53380-7446-45C2-B9E4-35B86B212A28}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {405552F9-CBFB-48AD-B162-CFBEF1E5E834}

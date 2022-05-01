@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Finder.Plugins.Contracts\Finder.Plugins.Contracts.csproj" />
+    <ProjectReference Include="..\Finder.Plugins.SystemFileSearch.Dependencies\Finder.Plugins.SystemFileSearch.Dependencies.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

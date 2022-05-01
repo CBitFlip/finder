@@ -20,7 +20,7 @@ public sealed class FileContentSearchPlugin : IPlugin
     public Task<PluginOutput> FindAsync(PluginInput input, CancellationToken ctx = default)
     {
         var output = new PluginOutput(PluginResultStatus.Skipped, null);
-
+        
         return Task.FromResult(output);
     }
 

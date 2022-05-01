@@ -7,6 +7,7 @@ It finds stuff, because it is a finder.
 - Visual Studio 2022+ Community: https://visualstudio.microsoft.com/vs/community/
 - Visual Studio Code: https://code.visualstudio.com/
 - DotNet 6: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+- Golang, see: [readme link](/plugins/Finder.Plugins.SystemFileSearch.Dependencies/README.md)
 
 ### Visual Studio
 
