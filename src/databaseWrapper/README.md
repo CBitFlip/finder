@@ -8,7 +8,7 @@
  * copy git repo
 
 ## build steps
- * go build -buildmode=c-shared -buildvcs=false
+ * go build -buildmode=c-shared -buildvcs=false -o finderDB.dll
 
 ## command-line options
 * `-create` creates the database if it doesn't already exist. Establishes the necessary tables. Required for each call
