@@ -16,9 +16,9 @@
 * `-find`   finds files in the database that match the string provided. Runs query ... like '%search%'
 
 ## example
-finderDB.exe -create path/to/database.db
-finderDB.exe -create path/to/database.db -add path/to/fileWithLongName.txt
-finderDB.exe -create path/to/database/db -find fileWith
+* finderDB.exe -create path/to/database.db
+* finderDB.exe -create path/to/database.db -add path/to/fileWithLongName.txt
+* finderDB.exe -create path/to/database/db -find fileWith
 
 ## exported functions
 * `createDatabase(pathAndNameOfDatabase)` equivalent to the `-create` command-line option
