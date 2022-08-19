@@ -30,23 +30,16 @@ dotnet test
 
 ## Database Structure
 
+Table: File
+id: int
+filename: nvarchar
+last-access: int (ticks) ? idea is we can have last accessed sooner in the index, as the user probably is revisiting files
+path: nvarchar
+
 Table: Words
 id: int
 value: nvarchar
 
-Table: File
-id: int
-filename: nvarchar
-path: nvarchar
-
 Table: FileWordsMapping
 wordId: int
 fileId: int
-
-## File Index Project Structure
-
-Finder.Plugins.SystemFileSearch
-|>Finder.Plugins.SystemFileSearch.Persistence
-
-Finder.Plugins.SystemFileSearch.DataPrepper
-|>Finder.Plugins.SystemFileSearch.Persistence
